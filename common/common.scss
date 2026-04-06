@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+// Ibomy：覆盖官方 Poll 插件外观（DOM 结构见 discourse/plugins/poll）
+
+// 进度条颜色：与整站语义色一致，可按品牌改 tertiary / 固定色
+:root {
+  --poll-bar-color: #f4f4f4;
+  --poll-bar-color--chosen: #ffd2fd;
+}
+
+// 结构选择器示例（需要时再取消注释并写规则）：
+// div.poll-outer div.poll { }
+// div.poll-outer div.poll .poll-info { }
+// div.poll-outer div.poll li[data-poll-option-id] button { }
