@@ -12,3 +12,16 @@
 // div.poll-outer div.poll { }
 // div.poll-outer div.poll .poll-info { }
 // div.poll-outer div.poll li[data-poll-option-id] button { }
+div.poll-outer div.poll li[data-poll-option-id] {
+  font-size: var(--font-up-0);
+  color: #292a2c;
+  button {
+    background-color: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+}
+
+div.poll-outer div.poll .discourse-poll-regular-results .poll-voters {
+  display: none;
+}
