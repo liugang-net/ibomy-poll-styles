@@ -17,11 +17,36 @@ div.poll-outer div.poll li[data-poll-option-id] {
   color: #292a2c;
   button {
     background-color: #f4f4f4;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 12px 17px;
+    border-radius: 10px;
   }
 }
-
-div.poll-outer div.poll .discourse-poll-regular-results .poll-voters {
+div.poll-outer div.poll .poll-voters {
   display: none;
+}
+div.poll-outer div.poll .poll-container li {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: var(--font-up-0);
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  .option {
+    .bar-back {
+      position: absolute;
+      inset: 0;
+      height: 100%;
+      .bar {
+        height: 100%;
+        background-color: #ffd2fd;
+      }
+    }
+  }
+}
+div.poll-outer div.poll .results .option p {
+  padding: 12px 17px;
+  position: relative;
+  z-index: 1;
 }
