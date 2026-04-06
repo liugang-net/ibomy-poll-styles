@@ -12,13 +12,18 @@
 // div.poll-outer div.poll { }
 // div.poll-outer div.poll .poll-info { }
 // div.poll-outer div.poll li[data-poll-option-id] button { }
+div.poll-outer div.poll {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  border: none;
+}
 div.poll-outer div.poll li[data-poll-option-id] {
-  font-size: var(--font-up-0);
+  font-size: 16px;
   color: #292a2c;
   button {
     background-color: #f4f4f4;
     padding: 12px 17px;
-    border-radius: 10px;
+    border-radius: 8px;
   }
 }
 div.poll-outer div.poll .poll-voters {
@@ -26,10 +31,9 @@ div.poll-outer div.poll .poll-voters {
 }
 div.poll-outer div.poll .poll-container li {
   background-color: #f4f4f4;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-bottom: 10px;
-  position: relative;
-  font-size: var(--font-up-0);
+  font-size: 16px;
   overflow: hidden;
   position: relative;
   padding: 0;
