@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 // Ibomy：覆盖官方 Poll 插件外观（DOM 结构见 discourse/plugins/poll）
 
 // 进度条颜色：与整站语义色一致，可按品牌改 tertiary / 固定色
@@ -53,4 +52,7 @@ div.poll-outer div.poll .results .option p {
   padding: 12px 17px;
   position: relative;
   z-index: 1;
+}
+div.poll-outer div.poll .poll-info {
+  font-size: 12px;
 }
