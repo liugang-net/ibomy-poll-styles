@@ -12,7 +12,7 @@
 // div.poll-outer div.poll .poll-info { }
 // div.poll-outer div.poll li[data-poll-option-id] button { }
 div.poll-outer div.poll {
-  background-color: #f8f8f8;
+  // background-color: #f8f8f8;
   border-radius: 8px;
   border: none;
 }
@@ -29,7 +29,8 @@ div.poll-outer div.poll .poll-voters {
   display: none;
 }
 div.poll-outer div.poll .poll-container li {
-  background-color: #f4f4f4;
+  background-color: #ffffff;
+  border: 1px solid #000000;
   border-radius: 8px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -43,7 +44,12 @@ div.poll-outer div.poll .poll-container li {
       height: 100%;
       .bar {
         height: 100%;
-        background-color: #ffd2fd;
+        background-color: #ff3cf8;
+        background-image: repeating-linear-gradient(
+          -55deg,
+          rgba(255, 255, 255, 0.15) 0 8px,
+          rgba(255, 255, 255, 0) 8px 14px
+        );
       }
     }
   }
@@ -52,6 +58,9 @@ div.poll-outer div.poll .results .option p {
   padding: 12px 17px;
   position: relative;
   z-index: 1;
+  .percentage {
+    color: #000000;
+  }
 }
 div.poll-outer div.poll .poll-info {
   font-size: 12px;
