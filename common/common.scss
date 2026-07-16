@@ -13,9 +13,9 @@
 // div.poll-outer div.poll .poll-info { }
 // div.poll-outer div.poll li[data-poll-option-id] button { }
 div.poll-outer div.poll {
-  // background-color: #f8f8f8;
+  background-color: #ffffff;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #9d9d9d;
 }
 div.poll-outer div.poll li[data-poll-option-id] {
   font-size: 16px;
