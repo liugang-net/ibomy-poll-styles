@@ -3,8 +3,9 @@
 
 // 进度条颜色：与整站语义色一致，可按品牌改 tertiary / 固定色
 :root {
-  --poll-bar-color: #f4f4f4;
-  --poll-bar-color--chosen: #ffd2fd;
+  --poll-bar-background: #f4f4f4;
+  --poll-bar-color: #ff3cf8;
+  --poll-bar-color--chosen: #18e9e2;
 }
 
 // 结构选择器示例（需要时再取消注释并写规则）：
@@ -30,7 +31,7 @@ div.poll-outer div.poll .poll-voters {
 }
 div.poll-outer div.poll .poll-container li {
   background-color: #ffffff;
-  border: 1px solid #000000;
+  border: none;
   border-radius: 8px;
   margin-bottom: 10px;
   font-size: 16px;
@@ -42,9 +43,10 @@ div.poll-outer div.poll .poll-container li {
       position: absolute;
       inset: 0;
       height: 100%;
+      background-color: var(--poll-bar-background);
       .bar {
         height: 100%;
-        background-color: #ff3cf8;
+        background-color: var(--poll-bar-color);
         background-image: repeating-linear-gradient(
           -55deg,
           rgba(255, 255, 255, 0.15) 0 8px,
@@ -52,6 +54,9 @@ div.poll-outer div.poll .poll-container li {
         );
       }
     }
+  }
+  &.chosen .option .bar-back .bar {
+    background-color: var(--poll-bar-color--chosen);
   }
 }
 div.poll-outer div.poll .results .option p {
